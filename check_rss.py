@@ -81,8 +81,3 @@ for iteration in range(1, MAX_ITERATIONS + 1):
                 )
                 error_notified = True
         break
-
-# ストレージ/転送量表示（手動テスト用）
-print(f"--- 統計情報（手動テスト用） ---")
-print(f"通知バイト数: {total_bytes} bytes")
-print(f"state ファイルサイズ: {os.path.getsize(STATE_FILE)} bytes")
