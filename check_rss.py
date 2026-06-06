@@ -16,7 +16,8 @@ total_bytes = 0
 # 前回のリンクを読み出す
 if os.path.exists(STATE_FILE):
     with open(STATE_FILE, "r", encoding="utf-8") as f:
-        last_links = json.load(f)
+        data = json.load(f)
+        last_links = data.get("last_links", [])
 else:
     last_links = []
 
