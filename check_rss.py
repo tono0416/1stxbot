@@ -7,7 +7,7 @@ import time
 RSS_URL = "https://nitter.net/amarareitem/rss"
 KEYWORD = "らくらくベビー"
 STATE_FILE = "last_checked.json"
-MAX_ITERATIONS = 59
+MAX_ITERATIONS = 54
 SLEEP_SECONDS = 30
 
 # 通知容量スタット使用量（手動テスト用）
