@@ -3,7 +3,7 @@ import requests
 import os
 
 # ここに Nitter/Xcancel 系の RSS URL を入れる
-RSS_URL = "https://nitter.net/USERNAME/rss"
+RSS_URL = "https://nitter.net/amarareitem/rss"
 
 # 検知したいキーワード
 KEYWORD = "らくらくベビー"
