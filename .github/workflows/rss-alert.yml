@@ -33,6 +33,7 @@ jobs:
       - run: python check_rss.py
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          PYTHONUNBUFFERED: "1"
 
       - name: state ファイルをコミット
         if: success()
