@@ -11,7 +11,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 8  # 8 分でタイムアウト [web:425][web:427]
+    timeout-minutes: 40  # 40分でタイムアウト [web:425][web:427]
     
     steps:
       - uses: actions/checkout@v4
