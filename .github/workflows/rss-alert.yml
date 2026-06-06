@@ -1,5 +1,8 @@
 name: RSS Alert
 
+permissions:
+  contents: write  # push 権限を追加
+  
 on:
   schedule:
     - cron: "*/5 * * * *"  # 5 分ごとに実行
