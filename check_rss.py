@@ -17,7 +17,10 @@ total_bytes = 0
 if os.path.exists(STATE_FILE):
     with open(STATE_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
-        last_links = data.get("last_links", [])
+        if isinstance(data, dict):
+            last_links = data.get("last_links", [])
+        else:
+            last_links = list(data)
 else:
     last_links = []
 
