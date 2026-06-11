@@ -4,8 +4,6 @@ permissions:
   contents: write  # push 権限を追加
   
 on:
-  schedule:
-    - cron: "*/30 * * * *"  # 30分ごとに実行
   workflow_dispatch:
 
 jobs:
